@@ -1,0 +1,48 @@
+import SimplePredictingMachine from "../../../components/simple-predicting-machine"
+
+# Simple Predicting machine
+
+In this Episode of BYONN (Build Your Own Neural Network) we will be building a simple
+predicting modal which is responsible for predicting the a value and understanding how
+a Neural Network are written.
+
+So what are we waiting for let's get started Padawan.
+
+If you think about it how easy for you to look at a simple conversion like below and 
+get predict a value.
+
+But for a computer it is not as simple as it seems like , a computer can not just look
+at something an predict it's value like that. 
+
+# The Truth
+
+In this case instead of using the formula we are going to look at the some of the sample values of KM and miles
+and from this try to deduce a pattern.
+
+|  | KilloMeter | Miles |
+|-------|-----|-----|
+| 0   | 0 |     0
+| 1   | 1 | 0.62
+| 2 | 10 | 6.21371
+| 3 | 100 | 62.13
+| 4 | 200 | 124.274
+
+
+if you see the above table you can see this is actually linear pattern. Meaning if we increase the value of 
+Km, miles also increase with some same constant.
+
+This can be easily be converted into a graph of y = cx where c is a constant. This graph will look something like 
+below.
+
+
+
+# Practical Example
+
+So let's see what it will take to a computer to predict a value of a constant c so that we constant can
+build a simple predicting machine which can predict the value of miles give the killometer.
+
+
+
+
+
+<SimplePredictingMachine/>import { constants } from "buffer"
